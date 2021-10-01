@@ -9,7 +9,11 @@ namespace practice
             //Console.WriteLine("Hello World!");
             //Console.Read();
 
-            //Data Types
+            //Console colors
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.Clear();
 
 
             ///////////////String type/////////////////////////
