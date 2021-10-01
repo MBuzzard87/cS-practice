@@ -64,7 +64,19 @@ namespace practice
 
             Console.WriteLine("Enter a character to find the int ASCII value");
             int asciiValue = Console.Read();
-            Console.WriteLine("ASCII value is {0}", asciiValue);
+            Console.WriteLine($"ASCII value is {asciiValue} and you previously entered the string: {readInput}");
+            //or
+            Console.WriteLine("ASCII value is {0} and you previously entered the string: {1}", asciiValue, readInput);
+
+            // add an @ symbol before the string for it to take the string literally
+            Console.WriteLine(@"Verbatim strings
+Example for verbatim string: C:\User\Admin\Dogpics\shia.png
+
+Allows you to pass escape characters, ex: \n 
+            ASCII value is {0} and you, 
+                
+                
+            previously entered the string: {1}", asciiValue, readInput);
 
             string strNum = "20";
             int numStr = Int32.Parse(strNum);
