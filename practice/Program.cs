@@ -58,12 +58,18 @@ namespace practice
 
             //////Test write/read ////////
 
-
+            Console.WriteLine("Enter a string to print value");
             string readInput = Console.ReadLine();
             Console.WriteLine("You have entered {0}", readInput);
 
+            Console.WriteLine("Enter a character to find the int ASCII value");
             int asciiValue = Console.Read();
             Console.WriteLine("ASCII value is {0}", asciiValue);
+
+            string strNum = "20";
+            int numStr = Int32.Parse(strNum);
+            Console.WriteLine(numStr);
+
             Console.ReadKey();
         }
     }
