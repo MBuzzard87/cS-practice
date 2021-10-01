@@ -58,7 +58,7 @@ namespace practice
 
             //////Test write/read ////////
 
-            Console.WriteLine("Enter a string to print value");
+/*            Console.WriteLine("Enter a string to print value");
             string readInput = Console.ReadLine();
             Console.WriteLine("You have entered {0}", readInput);
 
@@ -81,6 +81,16 @@ Allows you to pass escape characters, ex: \n
             string strNum = "20";
             int numStr = Int32.Parse(strNum);
             Console.WriteLine(numStr);
+
+*/
+            Console.Write("Enter a string here: ");
+            string input = Console.ReadLine();
+
+            Console.Write("Enter a character to search for: ");
+            char numSearch = Console.ReadLine()[0];
+            int searchIndex = input.IndexOf(numSearch);
+
+            Console.WriteLine("Index of character {0} in string is {1}", numSearch, searchIndex);
 
             Console.ReadKey();
         }
