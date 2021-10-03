@@ -101,6 +101,10 @@ Allows you to pass escape characters, ex: \n
             PracticeJawn pj = new PracticeJawn();
             Console.WriteLine(pj.Add(3, 4));
             pj.WriteSomething();
+
+            pj.CalculatorAdd();
+
+
             Console.ReadKey();
         }
     }
