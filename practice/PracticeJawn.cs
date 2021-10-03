@@ -13,6 +13,11 @@ namespace practice
             return num1 + num2;
         }
 
+        public void WriteSomething()
+        {
+            Console.WriteLine("Something");
+            Console.Read();
+        }
 
 
     }
