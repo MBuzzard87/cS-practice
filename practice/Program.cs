@@ -4,6 +4,13 @@ namespace practice
 {
     class Program
     {
+
+
+        //Constants - immutable
+        const double PI = 3.1459265359;
+        const int weeks = 52, months = 12;
+        
+
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
@@ -91,6 +98,8 @@ Allows you to pass escape characters, ex: \n
             int searchIndex = input.IndexOf(numSearch);
 
             Console.WriteLine("Index of character {0} in string is {1}", numSearch, searchIndex);
+            PracticeJawn pj = new PracticeJawn();
+            Console.WriteLine(pj.Add(3, 4));
 
             Console.ReadKey();
         }
