@@ -40,6 +40,9 @@ namespace practice
             } catch (ArgumentNullException)
             {
                 Console.WriteLine("Argument Null Exception, the value was empty(null)");
+            } finally
+            {
+                Console.WriteLine("FINALLY");
             }
 
             Console.ReadKey();
