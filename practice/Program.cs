@@ -100,7 +100,7 @@ Allows you to pass escape characters, ex: \n
             Console.WriteLine("Index of character {0} in string is {1}", numSearch, searchIndex);
             PracticeJawn pj = new PracticeJawn();
             Console.WriteLine(pj.Add(3, 4));
-
+            pj.WriteSomething();
             Console.ReadKey();
         }
     }
