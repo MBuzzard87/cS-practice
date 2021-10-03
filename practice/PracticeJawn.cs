@@ -31,11 +31,18 @@ namespace practice
             {
                 int num1 = int.Parse(input1);
                 int num2 = int.Parse(input2);
-            } catch (Exception)
+            } catch (FormatException) 
             {
                 Console.WriteLine("Format exception, please use a whole number next time");
+            } catch (OverflowException)
+            {
+                Console.WriteLine("Overflow exception, the numer is too long/short for an int32");
+            } catch (ArgumentNullException)
+            {
+                Console.WriteLine("Argument Null Exception, the value was empty(null)");
             }
 
+            Console.ReadKey();
 
         }
 

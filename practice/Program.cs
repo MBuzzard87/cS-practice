@@ -65,47 +65,50 @@ namespace practice
 
             //////Test write/read ////////
 
-/*            Console.WriteLine("Enter a string to print value");
-            string readInput = Console.ReadLine();
-            Console.WriteLine("You have entered {0}", readInput);
+            /*            Console.WriteLine("Enter a string to print value");
+                        string readInput = Console.ReadLine();
+                        Console.WriteLine("You have entered {0}", readInput);
 
-            Console.WriteLine("Enter a character to find the int ASCII value");
-            int asciiValue = Console.Read();
-            Console.WriteLine($"ASCII value is {asciiValue} and you previously entered the string: {readInput}");
-            //or
-            Console.WriteLine("ASCII value is {0} and you previously entered the string: {1}", asciiValue, readInput);
+                        Console.WriteLine("Enter a character to find the int ASCII value");
+                        int asciiValue = Console.Read();
+                        Console.WriteLine($"ASCII value is {asciiValue} and you previously entered the string: {readInput}");
+                        //or
+                        Console.WriteLine("ASCII value is {0} and you previously entered the string: {1}", asciiValue, readInput);
 
-            // add an @ symbol before the string for it to take the string literally
-            Console.WriteLine(@"Verbatim strings
-Example for verbatim string: C:\User\Admin\Dogpics\shia.png
+                        // add an @ symbol before the string for it to take the string literally
+                        Console.WriteLine(@"Verbatim strings
+            Example for verbatim string: C:\User\Admin\Dogpics\shia.png
 
-Allows you to pass escape characters, ex: \n 
-            ASCII value is {0} and you, 
-                
-                
-            previously entered the string: {1}", asciiValue, readInput);
+            Allows you to pass escape characters, ex: \n 
+                        ASCII value is {0} and you, 
 
-            string strNum = "20";
-            int numStr = Int32.Parse(strNum);
-            Console.WriteLine(numStr);
 
-*/
-            Console.Write("Enter a string here: ");
-            string input = Console.ReadLine();
+                        previously entered the string: {1}", asciiValue, readInput);
 
-            Console.Write("Enter a character to search for: ");
-            char numSearch = Console.ReadLine()[0];
-            int searchIndex = input.IndexOf(numSearch);
+                        string strNum = "20";
+                        int numStr = Int32.Parse(strNum);
+                        Console.WriteLine(numStr);
 
-            Console.WriteLine("Index of character {0} in string is {1}", numSearch, searchIndex);
+
+                        Console.Write("Enter a string here: ");
+                        string input = Console.ReadLine();
+
+                        Console.Write("Enter a character to search for: ");
+                        char numSearch = Console.ReadLine()[0];
+                        int searchIndex = input.IndexOf(numSearch);
+
+                        Console.WriteLine("Index of character {0} in string is {1}", numSearch, searchIndex);
+
+                        Console.WriteLine(pj.Add(3, 4));
+                        pj.WriteSomething();
+                        Console.ReadKey();
+            */
+
             PracticeJawn pj = new PracticeJawn();
-            Console.WriteLine(pj.Add(3, 4));
-            pj.WriteSomething();
-
             pj.CalculatorAdd();
 
 
-            Console.ReadKey();
+            
         }
     }
 }
