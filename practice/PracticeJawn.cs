@@ -26,11 +26,12 @@ namespace practice
             Console.WriteLine("Enter the second number: ");
             string input2 = Console.ReadLine();
 
-
+            
             try
             {
                 int num1 = int.Parse(input1);
                 int num2 = int.Parse(input2);
+                Console.WriteLine(Add(num1, num2));
             } catch (FormatException) 
             {
                 Console.WriteLine("Format exception, please use a whole number next time");

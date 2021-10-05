@@ -18,8 +18,8 @@ namespace practice
 
             //Console colors
 
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.Clear();
 
 
