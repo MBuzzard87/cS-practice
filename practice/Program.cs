@@ -104,12 +104,16 @@ namespace practice
                         Console.ReadKey();
             
 
-            PracticeJawn pj = new PracticeJawn();
-            pj.CalculatorAdd();
-*/
+            
+
 
             UserPractice.Register();
             UserPractice.Login();
+
+*/
+
+            PracticeJawn pj = new PracticeJawn();
+            pj.Calculator();
             Console.Read();
             
         }
