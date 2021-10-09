@@ -21,7 +21,7 @@ namespace practice
             Console.ForegroundColor = ConsoleColor.Red;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.Clear();
-
+/*
 
             ///////////////String type/////////////////////////
             
@@ -65,7 +65,7 @@ namespace practice
 
             //////Test write/read ////////
 
-            /*            Console.WriteLine("Enter a string to print value");
+                        Console.WriteLine("Enter a string to print value");
                         string readInput = Console.ReadLine();
                         Console.WriteLine("You have entered {0}", readInput);
 
@@ -110,10 +110,24 @@ namespace practice
             UserPractice.Register();
             UserPractice.Login();
 
-*/
+
 
             PracticeJawn pj = new PracticeJawn();
             pj.Calculator();
+
+*/
+            HighScore hs = new HighScore();
+            var buzz = new HighScore(75,"Buzz");
+            var munir = new HighScore(80, "Munir");
+            var christian = new HighScore(85, "Christian");
+
+            var bestStudent = hs.bestStudent(buzz, munir, christian);
+
+            Console.WriteLine("The student with the highest grade was " + bestStudent.HighScorePlayer + " with a score of " + bestStudent.Score);
+                
+                
+                
+                
             Console.Read();
             
         }
