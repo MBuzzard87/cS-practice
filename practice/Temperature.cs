@@ -21,7 +21,7 @@ namespace practice
 
             return !success ? "Not a valid temperature" :
                 temp <= 15 ? "it is too cold here, it is " + input + " outside" :
-                temp >= 16 || temp <= 28 ? "it is ok" : "it is hot here";
+                temp >= 16 && temp <= 28 ? "it is ok" : "it is hot here";
 
         }
 
