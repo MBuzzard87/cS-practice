@@ -13,15 +13,16 @@ namespace practice
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            //Console.Read();
+            /*
+            Console.WriteLine("Hello World!");
+            Console.Read();
 
-            //Console colors
+            Console colors
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.Clear();
-            /*
+            
 
                         ///////////////String type/////////////////////////
 
@@ -143,17 +144,21 @@ namespace practice
 
             Student student = new Student();
             student.AverageScore();
-              */
+            
 
             Box box1 = new Box(2, 3, 4);
             Box box2 = new Box(6, 6, 6);
             
 
             Console.WriteLine(box1.GetVolume());
+            */
 
+            Members mem1 = new Members("Buzz", 34, 0);
+            mem1.Introduce(false);
 
-            Console.Read();
+            //Console.ReadKey();
             
         }
+
     }
 }
