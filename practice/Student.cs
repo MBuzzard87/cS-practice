@@ -7,7 +7,9 @@ namespace practice
     class Student
     {
 
-        public void AverageScore()
+
+        
+            public void AverageScore()
         {
             
             int totalScore = 0;
@@ -29,7 +31,7 @@ namespace practice
                 } else if (!success || tempScore < -1 || tempScore > 20)
                 {
 
-                    Console.WriteLine("\nPlease write a number between 1 and 20\n\n");
+                    Console.WriteLine("\nWARNING!!! Please write a number between 0 and 20\n\n");
                 }
 
                 
