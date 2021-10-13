@@ -114,7 +114,7 @@ namespace practice
 
                         PracticeJawn pj = new PracticeJawn();
                         pj.Calculator();
-
+            
 
                         HighScore hs = new HighScore();
                         var buzz = new HighScore(75,"Buzz");
@@ -123,8 +123,15 @@ namespace practice
 
                         var bestStudent = hs.bestStudent(buzz, munir, christian);
 
+            Console.WriteLine(buzz.HighScorePlayer);
+            buzz.HighScorePlayer = "Buzzy";
+            Console.WriteLine(buzz.HighScorePlayer);
+
+            
+
                         Console.WriteLine("The student with the highest grade was " + bestStudent.HighScorePlayer + " with a score of " + bestStudent.Score);
-            */
+      
+            
             Console.WriteLine("What is the current temperature");
             string tempStr = Console.ReadLine();
 
@@ -132,7 +139,10 @@ namespace practice
 
 
             Console.WriteLine(temp.checkTemp(tempStr));
-            
+         */
+
+            Student student = new Student();
+            student.AverageScore();
                 
                 
                 
