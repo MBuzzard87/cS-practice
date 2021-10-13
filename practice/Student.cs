@@ -17,7 +17,7 @@ namespace practice
 
             while (tempScore != -1)
             {
-                Console.WriteLine("Please enter a students grade.  When you're complete enter -1 to exit");
+                Console.WriteLine("****Please enter a students grade.  When you're complete enter -1 to exit****");
                 
                 
                 string scoreStr = Console.ReadLine();
@@ -26,15 +26,16 @@ namespace practice
                 {
                     totalScore += tempScore;
                     numOfStudents++;
-                } else if (!success && tempScore != -1)
+                } else if (!success || tempScore < -1 || tempScore > 20)
                 {
-                    Console.WriteLine("Please write a number between 1 and 20");
+
+                    Console.WriteLine("\nPlease write a number between 1 and 20\n\n");
                 }
 
                 
             }
             
-            Console.WriteLine("The average score of the " + numOfStudents + " students in the class is: " + (double)totalScore / (double)numOfStudents);
+            Console.WriteLine("\n\nThe average score of the " + numOfStudents + " students in the class is: " + (double)totalScore / (double)numOfStudents);
         }
 
 
