@@ -139,13 +139,19 @@ namespace practice
 
 
             Console.WriteLine(temp.checkTemp(tempStr));
-         */
+        
 
             Student student = new Student();
             student.AverageScore();
-                
-                
-                
+              */
+
+            Box box1 = new Box(2, 3, 4);
+            Box box2 = new Box(6, 6, 6);
+            
+
+            Console.WriteLine(box1.GetVolume());
+
+
             Console.Read();
             
         }
